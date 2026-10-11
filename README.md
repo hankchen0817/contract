@@ -64,17 +64,7 @@ graph TD
 
     AdminModule --> ProjMgmt
     AdminModule --> ScheduleSync
-```
----
-
-## 3. Implementation Priority Legend
-
-| Color / Priority Level | Description & Modules Included |
-| :--- | :--- |
-| 🔴 **High Priority (MVP Core)** | **Essential for Launch:** Landing Page, Supplier Pre-qualification, Material Catalog, Project Requirements, Landed Cost Comparison. |
-| 🟠 **Medium Priority** | **Process Completion:** Purchase Order Issuance, Post-Delivery Rating Form, Project Administration & User Permissions. |
-| 🟡 **Low Priority (Phases 2–3)** | **Advanced Features:** Vendor Scorecards, Blacklisting/Flagging, Schedule Auto-Syncing, Regional Price Benchmarking. |
-
+    ```markdown
 ---
 
 ## 4. Team Members & Responsibilities
@@ -109,6 +99,7 @@ To support multi-person team collaboration within a single enterprise while main
    * When multiple employees view or edit the same purchase order simultaneously, records maintain a `version_id`. If user A updates a record while user B is editing it, user B is prompted to refresh before saving, preventing accidental data overwrites.
 
 ---
+
 ## 6. Detailed User Stories
 
 * **As a GC Project Manager (PM):**
@@ -118,8 +109,6 @@ To support multi-person team collaboration within a single enterprise while main
   * I want to add new team members to our company account with per-seat billing updates so that our expanding procurement team can collaborate securely.
   * I want to review system audit logs to track who modified specific purchase orders or supplier ratings for full transparency.
 * **As a Material Supplier:**
-  * I want to list my raw material catalog, unit prices, and per-kilometer delivery rates so that I can receive qualified quote requests from contractors.
-
 ---
 
 ## 7. Technical Architecture & System Specs
