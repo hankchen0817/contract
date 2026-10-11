@@ -25,11 +25,10 @@ The following Mermaid graph outlines the site layout, team responsibilities, and
 
 ```mermaid
 graph TD
-    %% Priority Styling Definitions
-    classDef high fill:#ff9999,stroke:#333,stroke-width:2px,color:#000;      %% 🔴 High Priority (MVP Core)
-    classDef medium fill:#ffcc99,stroke:#333,stroke-width:1.5px,color:#000;  %% 🟠 Medium Priority
-    classDef low fill:#ffff99,stroke:#333,stroke-width:1px,color:#000;       %% 🟡 Low Priority (Future Phase)
-
+%% Priority Styling Definitions
+    classDef high fill:#ff9999,stroke:#333,stroke-width:2px,color:#000;      %% High Priority (MVP Core)
+    classDef medium fill:#ffcc99,stroke:#333,stroke-width:1.5px,color:#000;  %% Medium Priority
+    classDef low fill:#ffff99,stroke:#333,stroke-width:1px,color:#000;       %% Low Priority (Future Phase)
     %% Root
     Home[Contract Platform Landing Page <br> Lead: Dimas]
 
