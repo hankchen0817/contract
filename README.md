@@ -1,6 +1,7 @@
 # Contract - Supplier Sourcing and Rating Platform for General Contractors
 
 > **Course Project:** Software Engineering for Civil Technology (Assignment #2)  
+> **Team Members:** Dimas Dermawan (M11402826) | 陳韋翰 (M11505112)  
 > **Repository:** https://github.com/den-dimas/contract
 
 ---
@@ -18,9 +19,9 @@ Material purchases represent **40–60%** of a construction project's total budg
 
 ---
 
-## 2. Website Architecture & Implementation Priorities (Mermaid Diagram)
+## 2. Website Architecture & Team Assignment (Mermaid Diagram)
 
-The following Mermaid graph outlines the site layout and implementation priorities for MVP development.
+The following Mermaid graph outlines the site layout, team responsibilities, and implementation priorities for MVP development.
 
 ```mermaid
 graph TD
@@ -30,28 +31,28 @@ graph TD
     classDef low fill:#ffff99,stroke:#333,stroke-width:1px,color:#000;
 
     %% Root Node
-    Home["Contract Platform Landing Page"]
+    Home["Contract Platform Landing Page<br>Lead: Dimas"]
 
     %% Main Modules
-    SupplierModule["1. Supplier Directory Module"]
-    SourcingModule["2. Project Sourcing & Comparison"]
-    RatingModule["3. Performance Rating & Scorecards"]
-    AdminModule["4. Project & System Admin"]
+    SupplierModule["1. Supplier Directory Module<br>Lead: 陳韋翰"]
+    SourcingModule["2. Project Sourcing & Comparison<br>Lead: Dimas"]
+    RatingModule["3. Performance Rating & Scorecards<br>Lead: 陳韋翰"]
+    AdminModule["4. Project & System Admin<br>Lead: Dimas"]
 
     %% Sub-pages & Features
-    SupReg["Supplier Pre-Qualification & Reg"]
-    CatMgmt["Material Catalog & Pricing/Delivery"]
+    SupReg["Supplier Pre-Qualification & Reg<br>Lead: 陳韋翰"]
+    CatMgmt["Material Catalog & Pricing/Delivery<br>Lead: 陳韋翰"]
     
-    ReqDefine["Project Material Requirements"]
-    CostCompare["Landed Cost Real-time Comparison"]
-    PlaceOrder["Purchase Order Issuance"]
+    ReqDefine["Project Material Requirements<br>Lead: Dimas"]
+    CostCompare["Landed Cost Real-time Comparison<br>Lead: Dimas"]
+    PlaceOrder["Purchase Order Issuance<br>Lead: Dimas"]
 
-    PostRating["Post-Delivery Rating Mechanism"]
-    VendorScorecard["Vendor Scorecards & Reports"]
-    Blacklist["Supplier Blacklist / Flagging"]
+    PostRating["Post-Delivery Rating Mechanism<br>Lead: 陳韋翰"]
+    VendorScorecard["Vendor Scorecards & Reports<br>Lead: 陳韋翰"]
+    Blacklist["Supplier Blacklist / Flagging<br>Lead: 陳韋翰"]
 
-    ProjMgmt["Project Creation & Permissions"]
-    ScheduleSync["Schedule Sync & Auto-Adjustment"]
+    ProjMgmt["Project Creation & Permissions<br>Lead: Dimas"]
+    ScheduleSync["Schedule Sync & Auto-Adjustment<br>Lead: Dimas"]
 
     %% Architecture Links
     Home --> SupplierModule
