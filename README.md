@@ -64,8 +64,7 @@ graph TD
 
     AdminModule --> ProjMgmt
     AdminModule --> ScheduleSync
-    ```markdown
----
+```
 
 ## 6. Detailed User Stories
 
