@@ -64,7 +64,7 @@ graph TD
 
     AdminModule --> ProjMgmt
     AdminModule --> ScheduleSync
-    ```markdown
+```
 ---
 
 ## 4. Team Members & Responsibilities
