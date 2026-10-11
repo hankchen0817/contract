@@ -65,7 +65,50 @@ graph TD
     AdminModule --> ProjMgmt
     AdminModule --> ScheduleSync
 ```
+---
 
+## 3. Implementation Priority Legend
+
+| Color / Priority Level | Description & Modules Included |
+| :--- | :--- |
+| 🔴 **High Priority (MVP Core)** | **Essential for Launch:** Landing Page, Supplier Pre-qualification, Material Catalog, Project Requirements, Landed Cost Comparison. |
+| 🟠 **Medium Priority** | **Process Completion:** Purchase Order Issuance, Post-Delivery Rating Form, Project Administration & User Permissions. |
+| 🟡 **Low Priority (Phases 2–3)** | **Advanced Features:** Vendor Scorecards, Blacklisting/Flagging, Schedule Auto-Syncing, Regional Price Benchmarking. |
+
+---
+
+## 4. Team Members & Responsibilities
+
+| Member Name | Student ID / GitHub | Key Responsibilities & Modules | Expected Git Deliverables |
+| :--- | :--- | :--- | :--- |
+| **Dimas Dermawan** | `M11402826` / `@den-dimas` | • Project Sourcing & Comparison Module<br>• Landed Cost Calculation Logic<br>• System Architecture & Database Design | • Repo Initialization<br>• Sourcing & Landed Cost Spec<br>• Architecture & Priority Diagram |
+| **陳韋翰** | `M11505112` / `@hankchen0817` | • Supplier Directory & Catalog Module<br>• Performance Rating & Scorecard System<br>• Quality Assurance & Feasibility Enhancements | • Supplier Onboarding & Catalog Spec<br>• Post-delivery Rating Form Design<br>• Feasibility & Optimization Section |
+
+---
+
+## 5. Multi-User Access, Seat-Based Billing & Audit Logging
+
+To support multi-person team collaboration within a single enterprise while maintaining accountability and financial sustainability, **Contract** implements a seat-based subscription model and detailed user-level audit tracking:
+
+1. **Company-Level Organization Accounts & Multi-User Support:**
+   * Companies subscribe under a single Organization Tenant.
+   * Multiple personnel from the same company can access the platform under unique corporate credentials, avoiding shared password risks.
+2. **Seat-Based Licensing Model (Per-Seat Billing):**
+   * Standard subscription plans include a base allocation of user seats (e.g., 3 seats included in Starter Plan, 10 seats in Growth Plan).
+   * **Additional User Seats:** Adding new team members beyond the plan's base quota automatically incurs an additional monthly seat fee (e.g., +$15/user/month).
+   * Organization Admins can manage seats, send user invitations, and adjust license quotas directly in the Billing Dashboard.
+3. **Comprehensive User Audit Logs (Activity & Modification Tracking):**
+   * **Full Traceability:** Every creation, update, or deletion action across the platform—including order placements, catalog updates, price modifications, and post-delivery ratings—is permanently logged.
+   * **Log Details:** Each record captures the exact **User ID, User Name, Timestamp, IP Address, Modified Module, and Action Type (Create / Update / Delete)** along with before-and-after data diffs.
+   * **Audit Log Viewer:** Company Admins and Executives can query historical activity logs to investigate discrepancy issues and ensure strict operational governance.
+4. **Role-Based Access Control (RBAC):**
+   * **Admin:** Manage billing seats, user invitations, audit logs, and enterprise settings.
+   * **Project Manager (PM):** Define project material requirements, compare landed costs, and issue purchase orders.
+   * **Field Inspector:** Submit delivery receipt photos (PoD) and conduct post-delivery rating forms.
+5. **Optimistic Locking for Concurrent Edits:**
+   * When multiple employees view or edit the same purchase order simultaneously, records maintain a `version_id`. If user A updates a record while user B is editing it, user B is prompted to refresh before saving, preventing accidental data overwrites.
+
+---
 ## 6. Detailed User Stories
 
 * **As a GC Project Manager (PM):**
