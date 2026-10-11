@@ -67,6 +67,15 @@ graph TD
 ```
 ---
 
+## 3. Implementation Priority Legend
+
+| Color / Priority Level | Description & Modules Included |
+| :--- | :--- |
+| 🔴 **High Priority (MVP Core)** | **Essential for Launch:** Landing Page, Supplier Pre-qualification, Material Catalog, Project Requirements, Landed Cost Comparison. |
+| 🟠 **Medium Priority** | **Process Completion:** Purchase Order Issuance, Post-Delivery Rating Form, Project Administration & User Permissions. |
+| 🟡 **Low Priority (Phases 2–3)** | **Advanced Features:** Vendor Scorecards, Blacklisting/Flagging, Schedule Auto-Syncing, Regional Price Benchmarking. |
+---
+
 ## 4. Team Members & Responsibilities
 
 | Member Name | Student ID / GitHub | Key Responsibilities & Modules | Expected Git Deliverables |
